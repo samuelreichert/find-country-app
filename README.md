@@ -1,40 +1,44 @@
 <div align="center">
-  <h1>🌐 Find Country App with Theme Switcher</h1>
+  <h1>🌐 Find Country App</h1>
 </div>
 
 <div align="center">
-  Website made using Rest Countries API, React, and Styled Components<br />
+  A modern React Router framework-mode app powered by the REST Countries API.<br />
 </div>
 
 <div align="center">
   from Frontend Mentor Challenges
 </div>
 
-### Tech Stack
-* React
-* Styled Components
+### Stack
+
+- Bun
+- TypeScript, Vite, React 19, and React Router framework mode
+- TanStack Query
+- shadcn/ui Base UI components and Tailwind CSS utilities
 
 ### Setup
 
-#### `yarn start`
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### `bun install`
+
+Installs the locked Bun dependencies.
+
+#### `bun run dev`
+
+Runs the app in development mode. Open the URL printed by Vite.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-#### `yarn test`
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `bun run typecheck`
 
-#### `yarn run build`
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Generates React Router route types and checks the TypeScript project.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+#### `bun run build`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the framework-mode SPA for production in `build/client`.
+
+Country data is bundled from the [official REST Countries repository](https://github.com/restcountries/restcountries). This avoids exposing a v5 API key in the browser; run `bun run update-country-data` to refresh the snapshot.
 
 ### Features
 * See all countries from the API on the homepage
